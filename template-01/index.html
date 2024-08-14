@@ -402,12 +402,13 @@
 
             listItems.forEach((item, index) => {
                 const link = item.querySelector("[x-data]").getAttribute("x-data").split(":")[1].trim().slice(1, -1); // Extract the link value
-                if (link === "False") {
+                console.log(link);
+                //if (link === "False") {
                     // Hide this item and all subsequent items
-                    for (let i = index; i < listItems.length; i++) {
-                        listItems[i].style.display = "none";
-                    }
-                 }
+                    //for (let i = index; i < listItems.length; i++) {
+                        //listItems[i].style.display = "none";
+                    //}
+                 //}
              });
         });
         let progressBar = {
